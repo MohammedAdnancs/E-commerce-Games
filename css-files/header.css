@@ -1,0 +1,142 @@
+header {
+    background-color: #222831;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    padding: 10px 25px;
+    margin-bottom: 0px;
+    top: 0;
+    border-bottom: 2px #D65A31 solid;
+    justify-content: space-between;
+}
+
+.logo-header {
+    width: 10px;
+}
+
+
+.logo-header-real {
+    /* top left logo in the bar */
+    width: 75px;
+    display: inline-block;
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+    margin-top: 0;
+}
+
+
+.search-bar {
+    /* search bar in header*/
+    background: #ffffff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 50px;
+}
+
+.search-cont {
+    /* search bar in header*/
+    width: 800px;
+    height: 55;
+}
+
+.search-input {
+    /* search bar in header*/
+    flex: 1;
+    border: none;
+    outline: none;
+}
+
+.search-button {
+    /* search bar in header*/
+    background: #D65A31;
+    padding: 10px 25px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.user {
+    /* sign up log in and cart */
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.log-in {
+    /* login*/
+    color: #ffffff;
+    background-color: #D65A31;
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+
+.sign-up {
+    /*sign-up*/
+    color: #ffffff;
+    background-color: #D65A31;
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+
+
+.user a {
+    /* sign up log in and cart */
+    transition: 0.7s;
+}
+
+.user a:hover {
+    /* sign up log in and cart */
+    transform: scale(1.1);
+}
+
+header .user .fa-solid {
+    /* the cart in the header*/
+    align-self: center;
+    padding: 10px;
+    color: #D65A31;
+    font-size: 28px;
+    margin-right: 50px;
+}
+
+header .search-cont .fa-solid {
+    /* the magnifying glass in the left of the search bar*/
+    align-self: center;
+    padding: 10px 20px;
+    color: #D65A31;
+    font-size: 20px;
+}
+
+
+#searchresult {
+    position: fixed;
+    top: 7%;
+    margin-left: 20%;
+    width: 32%;
+    z-index: 2000;
+    border-radius: 17px;
+}
+
+#searchresult h6 {
+    color: #EEE;
+    margin-left: 14%;
+    letter-spacing: 5px;
+    font-size: 30px;
+    background-color: rgba(34, 40, 49, 0.8);
+    border-radius: 17px;
+    height: 70%;
+    padding-left: 20px;
+    margin-top: 3%;
+}

@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    font-family: 'Big Shoulders Display', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    display: fixed;
+    margin-top: 0;
+    background: radial-gradient(circle, rgba(21, 26, 33, 1) 21%, rgba(57, 62, 70, 1) 61%);
+    animation: gradient 12s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: #222831;
+    border-radius: 10px;
+    box-shadow: 0 0 25px #D65A31;
+    padding: 45px;
+    width: 70%;
+    display: flex;
+}
+
+.box .images {
+    width: 25%;
+    margin-left: 10%;
+}
+
+.box .images .img-holder img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.pname,
+.price,
+.info {
+    color: #D65A31;
+    background-color: #393E46;
+    cursor: pointer;
+    padding-left: 2%;
+    padding-right: 5%;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-bottom: 3%;
+}
+
+.pname:hover,
+.price:hover,
+textarea:hover {
+    border-color: #ffffff;
+    outline: none;
+    box-shadow: 0 0 5px #ffffff;
+}
+
+input[type="file"]:focus,
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    border-color: #00ADB5;
+    outline: none;
+    box-shadow: 0 0 5px #00ADB5;
+}
+
+.info {
+    width: 100%;
+    padding: 8px;
+    height: auto;
+}
+
+.tb {
+    font-size: 20px;
+    color: #EEEEEE;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+}
+
+#edit {
+    width: 30%;
+    height: 40px;
+    font-size: 20px;
+    background-color: #D65A31;
+    color: #EEEEEE;
+    border-radius: 7px;
+}
+
+#edit:hover {
+    background-color: #EEEEEE;
+    color: #D65A31;
+    border: #D65A31 solid 3px;
+    cursor: pointer;
+}
+
+#edit-form {
+    width: 50%;
+    margin-left: 15%;
+}
+
+/* the scrollbar */
+::-webkit-scrollbar {
+    /* width of the scrollbar */
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    /* color of the track for scroll bar*/
+    background: rgba(red, green, blue, 0.0);
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb {
+    /* color of the tracker for scroll bar*/
+    background: #5a5656;
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    /* change color scroll when hovering*/
+    background: #D65A31;
+}
+
+.message {
+    font-size: 40px;
+    color: #EEEEEE;
+}

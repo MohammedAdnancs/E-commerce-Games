@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: 'Big Shoulders Display', cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: fixed;
+  margin-top: 0;
+  background: radial-gradient(circle, rgba(21, 26, 33, 1) 21%, rgba(57, 62, 70, 1) 61%);
+  animation: gradient 12s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #222831;
+  border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5a5656;
+  border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D65A31;
+}
+
+.log_form {
+  display: flex;
+  width: 1100px;
+  margin-left: 40vh;
+  box-shadow: 0 0 20px #D65A31;
+  border-radius: 17px;
+  border: #D65A31 solid 3px;
+  margin-bottom: 100px;
+  height: 757px;
+}
+
+.log-img {
+  width: 600px;
+  height: 750px;
+  border-radius: 17px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  position: relative;
+  right: -200%;
+  opacity: 0.9;
+}
+
+.form_login {
+  width: 500px;
+  padding: 15px;
+  background-color: #222831;
+  border-radius: 17px;
+  font-size: 20px;
+  align-content: center;
+  transition: 1.3s;
+  display: flex;
+  flex-direction: column;
+  row-gap: 17px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-right: #D65A31 1px solid;
+}
+
+
+
+#form_login {
+  z-index: 999;
+  position: relative;
+  right: 0%;
+}
+
+#form_SignUp h1,
+#log_label {
+  color: #EEEE;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#form_SignUp button,
+#login,
+#switch {
+  padding: 10px;
+  margin-top: 30px;
+  width: 35%;
+  color: #EEEE;
+  background-color: #D65A31;
+  border: none;
+  border-radius: 8px;
+  margin-left: 30%;
+  font-size: 18px;
+  border: solid 3px #EEEE;
+}
+
+#login {
+  margin-top: 80px;
+}
+
+.end {
+  transition: 0.7s;
+}
+
+.end:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #EEEE;
+  cursor: pointer;
+}
+
+.input-control {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.input-control label {
+  color: #EEEE;
+}
+
+.input-control input {
+  border-radius: 10px;
+  display: block;
+  font-size: 25px;
+  padding: 10px;
+  width: 50%;
+  border: #D65A31 solid 2px;
+  height: 37.5px;
+  color: #EEEE;
+  background-color: #393E46;
+}
+
+#fname,
+#lname,
+#email2,
+#number,
+#age {
+  position: relative;
+  bottom: 400%;
+}
+
+#pass1,
+#pass2,
+#eye {
+  position: relative;
+  bottom: 700%;
+}
+
+#submit {
+  position: relative;
+  top: 400%;
+}
+
+#name {
+  display: flex;
+  row-gap: 100px;
+  column-gap: 30px;
+  margin-left: 5%;
+}
+
+#pass {
+  display: flex;
+  column-gap: 7px;
+  margin-left: 20px;
+}
+
+#name input,
+#pass input {
+  width: 193px;
+}
+
+#email_log1 {
+  margin-top: 10%;
+}
+
+#pass_log,
+#email_log1 {
+  margin-left: 0%;
+}
+
+#info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 17px;
+  margin-left: 5%;
+}
+
+#info input,
+#email_log1 input,
+#pass_log input {
+  width: 95%;
+}
+
+.input-control input:focus {
+  outline: 0;
+}
+
+.input-control.success input {
+  border-color: #09c372;
+}
+
+.input-control.error input {
+  border-color: #ff3860;
+}
+
+.input-control .error {
+  color: #ff3860;
+  font-size: 15px;
+  letter-spacing: 0.8;
+  width: 193px;
+  height: 10px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  50% {
+    background-position: 100% 100%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+#eye {
+  width: 20px;
+  height: 20px;
+  margin-top: 33px;
+  color: #EEEE;
+  margin-right: 5px;
+}
+
+.logo {
+  width: 6.5%;
+  z-index: 1000;
+  top: 0px;
+  left: 10px;
+  position: relative;
+
+}
+
+.logo_div {
+  position: relative;
+  right: 50%;
+}
+
+.gotosignup {
+  color: #EEEE;
+  margin-left: 140px;
+  margin-top: 40px;
+}
+
+.gotosignup span {
+  color: #D65A31;
+  margin-left: 10px;
+  text-decoration: underline;
+}

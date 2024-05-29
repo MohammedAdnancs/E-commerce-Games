@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    font-family: 'Big Shoulders Display', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+html,
+body {
+
+    width: 100%;
+    height: 100%;
+    display: fixed;
+    margin-top: 0;
+    background: radial-gradient(circle, rgba(21, 26, 33, 1) 21%, rgba(57, 62, 70, 1) 61%);
+    animation: gradient 12s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+/* header beginning */
+
+
+/*****************************************************End of the header ***************************************/
+
+.container {
+    overflow: hidden;
+    position: relative;
+    width: 1300px;
+    height: 600px;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 18%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    border: 7.5px solid #222831;
+    border-radius: 13px;
+    box-shadow: 0 0 20px #eeee;
+}
+
+.container .slides-row {
+    display: flex;
+    height: 90%;
+}
+
+.container .slides-row .slide {
+    min-width: 100%;
+}
+
+.container span.next,
+.container span.prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 12px 16px;
+    color: #eee;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.5s;
+    border-radius: 3px;
+    user-select: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.container span.next {
+    right: 10px;
+}
+
+.container span.prev {
+    left: 10px;
+}
+
+.container .dots {
+    position: absolute;
+    bottom: 5px;
+    z-index: 3;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container .dots .dot {
+    height: 8px;
+    width: 8px;
+    margin: 0 2px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.slides-row .slid-imgS,
+.slides-row .slid-img {
+    width: 100%;
+    height: 586px;
+    border-radius: 5px;
+    object-fit: cover;
+
+}
+
+video {
+    width: 100%;
+    height: 586px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.container .dots .active {
+    background-color: #ffffff;
+}
+
+@media (max-width:1100px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media (max-width:650px) {
+    .container {
+        width: 90%;
+        height: 300px;
+    }
+}
+
+/* Best-sellers, New-arrivals,Recommended sec */
+
+.container-Recommended,
+.container-best-sellers {
+    /* the container of the sections*/
+    background-color: #222831;
+    width: 1700px;
+    height: 325px;
+    justify-content: center;
+    column-gap: 90px;
+    margin-left: 150px;
+    margin-bottom: 100px;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    box-shadow: 0 0 25px #EEEEEE;
+}
+
+.container-New {
+    /* the container of the sections*/
+    background-color: #222831;
+    width: 1700px;
+    height: 660px;
+    margin-left: 150px;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding-right: 200px;
+    box-shadow: 0 0 25px #eeee;
+    display: flex;
+    justify-content: center;
+}
+
+.New-move {
+    /* the card in the new container*/
+    width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 100px;
+    row-gap: 10px;
+    margin-left: 190px;
+}
+
+.New h2,
+.Recommended h2,
+.Best-Sellers h2 {
+    /*headers of the sections*/
+    color: #EEEEEE;
+    text-align: center;
+    padding-left: 8px;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border-radius: 5px;
+    font-family: 'Big Shoulders Display', cursive;
+    letter-spacing: 1px;
+    transition: 0.7s;
+}
+
+.Best-Sellers span,
+.Recommended span,
+.New span {
+    /* give the headers borders */
+    border-bottom: #D65A31 3px solid;
+    border-top: #D65A31 3px solid;
+}
+
+/****************************************************** End of sections**********************************************/
+
+
+/* the scrollbar */
+::-webkit-scrollbar {
+    /* width of the scrollbar */
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    /* color of the track for scroll bar*/
+    background: rgba(red, green, blue, 0.0);
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb {
+    /* color of the tracker for scroll bar*/
+    background: #5a5656;
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    /* change color scroll when hovering*/
+    background: #D65A31;
+}
+
+/************************************************** End of  the scrollbar ************************************************/
+
+
+.card {
+    position: relative;
+    margin-top: 15px;
+    width: 240px;
+    height: 300px;
+    background: #222831;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 20px #eeee;
+    transition: 0.7s;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #393E46;
+    transform: skewY(345deg);
+    transition: 0.5s;
+}
+
+.card:hover::before {
+    top: -60%;
+    transform: skewY(390deg);
+}
+
+.card::after {
+    content: "MQA";
+    position: absolute;
+    margin-left: 55px;
+    bottom: 0;
+    font-weight: 600;
+    font-size: 6em;
+    color: rgba(0, 0, 0, 0.1);
+}
+
+.card .imgBox {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    z-index: 1;
+    transition: 0.7s;
+}
+
+.card .imgBox img {
+    width: 150px;
+    height: 170px;
+    transition: 0.7s;
+    filter: grayscale(0.2);
+}
+
+.card .imgBox:hover img {
+    transform: scale(1.1);
+    filter: none;
+}
+
+.card .contentBox {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.card .buy:hover {
+    box-shadow: 0 0 15px #EEEEEE;
+}
+
+.card .contentBox h3 {
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.card .contentBox .price {
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.card .contentBox .buy {
+    position: relative;
+    top: 100px;
+    opacity: 0;
+    padding: 10px 30px;
+    margin-top: 0px;
+    color: #eeee;
+    text-decoration: none;
+    background: #D65A31;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.card:hover .contentBox .buy {
+    top: 5px;
+    opacity: 1;
+}
+
+.card:hover {
+    scale: 1.05;
+    box-shadow: 0 0 20px #D65A31;
+}
+
+.mouse {
+    height: 300px;
+    width: auto;
+}

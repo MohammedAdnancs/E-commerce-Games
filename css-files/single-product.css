@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    font-family: 'Big Shoulders Display', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+html,
+body {
+
+    width: 100%;
+    height: 100%;
+    display: fixed;
+    margin-top: 0;
+    background: radial-gradient(circle, rgba(21, 26, 33, 1) 21%, rgba(57, 62, 70, 1) 61%);
+    animation: gradient 12s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: #222831;
+    border-radius: 10px;
+    box-shadow: 0 0 25px #D65A31;
+    padding: 45px;
+    margin: 15px 0;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        "images info"
+        "images description";
+    grid-gap: 35px;
+    height: 150%;
+}
+
+.box .images {
+    grid-area: images;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        "active active active"
+        "idle idle idle";
+    grid-gap: 5px;
+}
+
+.box .images .img-holder img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.box .basic-info {
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.box .basic-info .rate {
+    color: #D65A31
+}
+
+.box .basic-info span {
+    font-weight: 800;
+    font-size: 25px;
+    color: #EEEEEE
+}
+
+.box .basic-info h1 {
+    color: #EEEEEE
+}
+
+.box .basic-info .options a {
+    color: #EEEEEE;
+    background-color: #D65A31;
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 12px;
+    border-radius: 5px;
+    width: 28%;
+    justify-content: center;
+}
+
+.tb {
+    justify-content: center;
+    text-align: center;
+}
+
+.box .basic-info .options a:hover {
+    background-color: #EEEEEE;
+    color: #D65A31;
+    box-shadow: 0 0 25px #D65A31;
+}
+
+.box .description {
+    grid-area: description;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.box .description p {
+    color: #EEEEEE;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+
+.message {
+    font-size: 50px;
+    color: #EEEEEE;
+}

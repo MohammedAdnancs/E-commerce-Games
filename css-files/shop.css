@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Display&display=swap');
+
+/*-----------------------------start body---------------------------*/
+* {
+  font-family: 'Big Shoulders Display', cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+
+html,
+body {
+
+  width: 100%;
+  height: 100%;
+  display: fixed;
+  margin-top: 0;
+  background: radial-gradient(circle, rgba(21, 26, 33, 1) 21%, rgba(57, 62, 70, 1) 61%);
+  animation: gradient 12s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+
+}
+
+/*-----------------------------------end body-------------------------------*/
+
+/* the scrollbar */
+::-webkit-scrollbar {
+  /* width of the scrollbar */
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  /* color of the track for scroll bar*/
+  background: #1f2023;
+  border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb {
+  /* color of the tracker for scroll bar*/
+  background: #5a5656;
+  border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  /* change color scroll when hovering*/
+  background: #D65A31;
+}
+
+/************************************************** End of  the scrollbar ************************************************/
+
+/*---------------------------start product list------------------------*/
+
+.product-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 60%;
+  position: absolute;
+  top: 250px;
+  column-gap: 50px;
+  row-gap: 50px;
+  margin-left: 20%;
+  margin-top: 7.5%;
+  max-height: 90%;
+  width: 65%;
+  overflow-y: scroll;
+  scroll-behavior: auto;
+  padding: 30px;
+  margin-left: 18%;
+  z-index: 900;
+}
+
+.card {
+  position: relative;
+  width: 265px;
+  height: 370px;
+  background: #222831;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 20px #eeee;
+  transition: (0.5s);
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #D65A31;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+
+.card:hover:before {
+  clip-path: circle(300px at 80% -20%);
+}
+
+.card .imgBx {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 998;
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+}
+
+.card:hover .imgBx {
+  top: 0%;
+  transform: translateY(-25%);
+  /* bug  */
+}
+
+.card .imgBx img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 130px;
+}
+
+.card .contentBx {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 90;
+}
+
+.card:hover .contentBx {
+  height: 210px;
+}
+
+.card .contentBx h2 {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #EEEEEE;
+}
+
+
+.card .contentBx a {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #D65A31;
+  opacity: 0;
+  transform: translateY(65px);
+  transition: .5s;
+  border: solid 3px #eeee;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.card:hover .contentBx a {
+  opacity: 1;
+  transform: translateY(65px);
+
+}
+
+.card:hover .contentBx h2 {
+  opacity: 1;
+  transform: translateY(20px);
+
+}
+
+.card .contentBx a:hover {
+  cursor: pointer;
+  scale: 1.2;
+  color: #eeee;
+  background: #D65A31;
+  box-shadow: 0 0 10px #eeee;
+}
+
+.card:hover {
+  scale: 1.1;
+  box-shadow: 0 0 20px #D65A31;
+  transition: 0.7s;
+}
+
+/*-----------------------------------end product list*------------------------/
+
+/* -------------------------------------start title----------------------------*/
+
+/*container holding the title letters*/
+.tp {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  font-size: 65px;
+  color: #eeee;
+  font-family: 'Big Shoulders Display', cursive;
+  column-gap: 15px;
+  margin-top: 100px;
+  z-index: 900;
+  margin-left: 36%;
+}
+
+#gamestp {
+  margin-left: 39%;
+}
+
+#etp {
+  margin-left: 38%;
+}
+
+/*hovering over the letters*/
+.let:hover {
+  color: #D65A31;
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+/*-----------------------------end title--------------------------*/
+
+/*---------------------start of change products buttons-----------------*/
+
+/*container of the buttons*/
+#nbutton {
+  font-family: 'Big Shoulders Display', cursive;
+  margin-top: 60%;
+  margin-left: 35%;
+  width: 800px;
+  font-size: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  column-gap: 50px;
+}
+
+/*managing the button*/
+.page-button {
+  position: relative;
+  display: inline-block;
+  padding: 15px;
+  padding-left: 10px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 20px;
+  overflow: hidden;
+  transition: 0.2s;
+  color: #D65A31;
+  width: 150px;
+  border: solid 3px #eeee;
+  border-radius: 18px;
+  text-align: center;
+}
+
+/*hovering over the button*/
+.page-button:hover {
+  color: #eeee;
+  background: #D65A31;
+  box-shadow: 0 0 10px #eeee;
+  box-shadow: 0 0 20px #eeee;
+  box-shadow: 0 0 40px #eeee;
+}
+
+/*------------------------------end buttons------------------------*/
+/*********/
+#con1 {
+  display: none;
+}
+
+#con2 {
+  display: none;
+}
+
+#con3 {
+  display: none;
+}
+
+
+
+/*********/
+
+
+
+
+/***************************************animated background***********************/
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  50% {
+    background-position: 100% 100%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
+}

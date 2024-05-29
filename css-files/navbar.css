@@ -1,0 +1,226 @@
+/* beginning of side nav*/
+
+.navbar {
+    /*the container of the side nav*/
+    width: 65px;
+    height: 92.9%;
+    position: fixed;
+    background-color: #222831;
+    transition: width 600ms ease;
+    top: 0;
+    margin-top: 70px;
+    overflow: hidden;
+    transition: 0.7s;
+}
+
+.navbar-nav {
+    /*the unorderd list of the side nav*/
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    transition: 0.7s;
+}
+
+.logo-nav {
+    /*the container of the double arrow logo on the top of the nav bar*/
+    width: 100%;
+    font-weight: bold;
+    letter-spacing: 0.3ch;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.logo-nav .material-symbols-outlined {
+    /*the double arrow logo on the top of the nav bar*/
+    font-size: 50px;
+    margin-left: 8px;
+    color: #D65A31;
+}
+
+.logo-nav .material-symbols-outlined {
+    /* animate top left logo in the nav bar */
+    transform: rotate(0deg);
+    transition: 600ms ease;
+}
+
+.navbar-nav:hover .logo-nav .material-symbols-outlined {
+    /* animate top left logo in the nav bar */
+    transform: rotate(-180deg);
+    color: #EEEEEE;
+}
+
+.navbar .fa-solid {
+    /*the icons in the side nav(home,shop,phone,aboutus)*/
+    padding: 10px 13px;
+    color: #EEEEEE;
+    font-size: 27px;
+}
+
+.nav-item-shop-menu,
+.nav-item {
+    /*the container of icons and titles be 100%*/
+    width: 100%;
+}
+
+.nav-item:last-child {
+    /*to make the about us at the botoom of the nav bar*/
+    margin-top: auto;
+}
+
+.nav-link-logo,
+.nav-link-shop,
+.nav-link {
+    /*the icons and titles inside the navbar*/
+    display: flex;
+    align-items: center;
+    height: 80px;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: 0.7s;
+}
+
+.nav-link-shop:hover,
+.nav-link:hover {
+    /*make a background when hovering on the items in the nav bar*/
+    background: #0c0909;
+}
+
+.nav-link-shop:hover .fa-solid,
+.nav-link:hover .fa-solid {
+    /*make icons color when hovering on the items in the nav bar*/
+    color: #D65A31;
+}
+
+.link-text {
+    /*the text beside the icons in the navbar*/
+    overflow: hidden;
+    height: 35px;
+    margin-left: 5px;
+    display: none;
+    font-size: 30px;
+}
+
+.navbar:hover {
+    /*effects when hovering on teh nav bar*/
+    width: 200px;
+    border-right: 2px #D65A31 solid;
+    opacity: 0.8;
+}
+
+.navbar:hover .link-text {
+    /*show the text beside the icons in the navbar*/
+    display: block;
+    color: rgb(255, 255, 255);
+}
+
+.nav-item-shop-menu:hover .link-text,
+.nav-link:hover .link-text {
+    overflow: visible;
+}
+
+/********sub menu in the shop sec in nav bar******/
+
+.submen-shop {
+    /*the sub menu in the shop navbar*/
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    list-style: none;
+    width: 100%;
+    margin-left: 0px;
+    transition: 0.7s ease;
+}
+
+.text-submen-shop {
+    /*the text in the sub menu in the shop navbar*/
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    margin-top: 5px;
+    text-decoration: none;
+    margin-left: 1px;
+    transition: 0.7s ease;
+    display: none;
+}
+
+.submen-shop-link {
+    /*icon and text in the sub menu shop */
+    display: flex;
+    flex-direction: row;
+    transition: 0.7s ease;
+}
+
+.nav-item-shop-menu:hover .shop-sub-menu {
+    /*to give the sub menu space when opened*/
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.submen-shop-link:hover {
+    /*to give the sub menu background color*/
+    background-color: rgb(0, 0, 0);
+}
+
+.submen-shop-link .fa-solid {
+    /*icons in the sub menu shop*/
+    font-size: 22px;
+    margin-left: 17.5px;
+    transition: 0.7s ease;
+    display: none;
+}
+
+.shop-sub-menu {
+    /*to make the submenu smooth*/
+    transition: 0.7s;
+}
+
+.nav-item-shop-menu:hover .fa-solid,
+.nav-item-shop-menu:hover .text-submen-shop {
+    /*when hovering on the icons in the sub menu shop*/
+    display: block;
+}
+
+.submen-shop-link:hover .fa-solid {
+    /*when hovering on the icons change color*/
+    color: #D65A31;
+}
+
+#Access {
+    /*moving the Accessories icon */
+    margin-left: 4px;
+}
+
+#lap {
+    /*moving the laptop icon*/
+    margin-left: 15px;
+}
+
+#gamepad {
+    /*moving the gamepad icon*/
+    margin-left: 15px;
+}
+
+.navbar ul li .link-text {
+    position: relative;
+}
+
+.navbar ul li .link-text::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #D65A31;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover .link-text::after {
+    width: 80%;
+}

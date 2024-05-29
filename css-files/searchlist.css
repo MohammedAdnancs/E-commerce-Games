@@ -1,0 +1,49 @@
+.item-search {
+    width: 100%;
+    background-color: rgba(34, 40, 49, 0.9);
+    margin-left: 8%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 17px;
+    height: 65px;
+    display: flex;
+}
+
+.item-search:hover {
+    background-color: rgba(34, 40, 49, 1);
+    color: #D65A31;
+    box-shadow: 0 0 20px #eeee;
+    cursor: pointer;
+}
+
+.info {
+    font-size: 30px;
+    color: #EEEEEE;
+    margin-left: 30px;
+    letter-spacing: 5px;
+}
+
+.options a {
+    color: #EEEEEE;
+    background-color: #D65A31;
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 12px;
+    border-radius: 5px;
+    width: 50px;
+    justify-content: center;
+    margin-left: 150px;
+}
+
+.tb {
+    justify-content: center;
+    text-align: center;
+}
+
+.options a:hover {
+    background-color: #EEEEEE;
+    color: #D65A31;
+    box-shadow: 0 0 25px #D65A31;
+}

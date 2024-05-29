@@ -1,0 +1,89 @@
+/* the fotter */
+
+.fotter {
+    /* the fotter container*/
+    background-color: #222831;
+    color: white;
+    width: 100%;
+    height: 200px;
+}
+
+.fotter h1 {
+    /* header of the fotter*/
+    font-weight: 500;
+    font-size: 60px;
+    margin-left: 90px;
+    letter-spacing: 2px;
+}
+
+.fotter p {
+    /* text in the footer*/
+    font-weight: 300;
+    font-size: 30px;
+    margin-left: 120px;
+    display: inline;
+    letter-spacing: 1px;
+}
+
+.social-icons {
+    /* social-icons in the footer*/
+    display: inline-flex;
+    margin-left: 51%;
+}
+
+.social-icons i {
+    /* social-icons in the footer*/
+    margin-left: 20px;
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 27px;
+}
+
+.fac {
+    /* social-icons in the footer*/
+    transition: 0.7s;
+}
+
+.fac:hover {
+    /* social-icons in the footer*/
+    transform: scale(1.1);
+}
+
+.fotter hr {
+    /* the line */
+    width: 100%;
+    margin-top: 10px;
+}
+
+.Copy-right {
+    /* Copy-right in the footer*/
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+.Copy-right p {
+    /* Copy-right in the footer*/
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.Copy-right span {
+    /* Copy-right in the footer*/
+    color: #D65A31;
+    margin-left: 5px;
+}
+
+.spacer {
+    margin-top: 100px;
+    aspect-ratio: 960/100;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1 {
+    margin-top: 100px;
+    background-image: url(layered-waves-haikei\ \(1\).svg);
+}
